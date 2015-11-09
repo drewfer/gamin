@@ -4,7 +4,7 @@
 (use-modules (ice-9 format)
              (ice-9 getopt-long))
 
-(define *data-population-size* 100000)
+(define *data-population-size* 10000)
 (define *query-population-size* 1000)
 
 ;; init random with the time of day
@@ -56,7 +56,6 @@
   (let ((len (vector-length vec))
         (my-vec (sort vec (lambda (a b) (< a b))))
         (ht (make-hash-table)))
-    (hash-set! ht 'mean (vector-mean my-vec))
     (let ((i25 (round-to-neareast-integer (/ len 4)))
           (i50 (round-to-neareast-integer (/ len 2)))
           (i75 (round-to-neareast-integer (* 3 (/ len 4)))))
