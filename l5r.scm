@@ -43,7 +43,7 @@
 	   (med (vector-ref results-vector (round-to-neareast-integer (* 0.5 n))))
 	   (high (vector-ref results-vector (round-to-neareast-integer (* 0.75 n)))))
       (format #t "~&~2dk~d,   |~2d|<-----~2d----->|~2d|~%" roll keep low med high))))
-      ;(format #t "~2dk~d, ~2d, ~2d, ~2d~%" roll keep low med high))))
+      ;(format #t "~2dk~d, ~2d, ~2d, ~2d, ~2d, ~2d~%" roll keep low med high roll keep))))
 
 (define (sim r k)
   (let* ((SAMPLE_SIZE 10000)

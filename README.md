@@ -6,7 +6,7 @@ This repo contains some simple scripts that I've found useful for generating plo
 Here's a simple plot of the roll/keep die probabilities for the Roll/Keep mechanic used in L5R and a few other systems.
 ![L5R chart](l5r.png)
 
-A conservative estimate is (Rolled * 5) + Kept.
+A conservative estimate is (Kept * 5) + Rolled.
 
 
 ## Savage Worlds

@@ -1,0 +1,13 @@
+set term png size 1600,1200
+set output "l5r.png"
+set xlabel "Roll/Keep"
+set ylabel "Result"
+set grid xtics
+set grid ytics
+set xtics 5 
+set xtics rotate
+set datafile separator ","
+set xrange[-1:55]
+set yrange[0:75]
+plot 'data.dat' using 0:3:2:4:xtic(1) title "Roll/Keep System" with errorbars, 'data.dat' using 0:($6*5)+$5 with line title "(5*Kept)+Rolled"
+quit
