@@ -9,7 +9,7 @@ set xtics rotate
 set datafile separator ","
 set xrange[-1:55]
 set yrange[0:75]
-plot 'data.dat' using 0:3:2:4:xtic(1) title "Roll/Keep System" with errorbars, 'data.dat' using 0:($6*5+$5) with line title "(5*Kept)+Rolled"
+plot 'data.dat' using 0:3:2:4:xtic(1) notitle lt 6 with errorbars, 'data.dat' using 0:($6*5+$5) lt 17 with line title "(5*Kept)+Rolled"
 #f(x,y) = a*x + b*y
 #fit f(x,y) 'data.dat' using 6:5 via a, b
 quit
