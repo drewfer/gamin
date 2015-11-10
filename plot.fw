@@ -1,0 +1,13 @@
+set term png size 800,600
+set output "fw.png"
+set xlabel "Skill Rating"
+set ylabel "Result (Max Die/Duplicates/Straight)"
+set grid xtics
+set grid ytics
+set ytics 0,3,20 
+set datafile separator ","
+set xrange[-0.5:4.5]
+set yrange[0:19]
+unset key
+plot 'data.dat' using 0:3:2:4:xtic(1) lt 17 with errorbars
+quit
