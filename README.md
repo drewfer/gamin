@@ -14,6 +14,8 @@ A conservative estimate is (Kept * 5) + Rolled.
 A Savage World's die plot - Wild Card die is a d6.
 ![Savage Worlds Plot](sw.png)
 
+Notice that moving from a d6 to a d8 isn't really an upgrade.  I didn't plot this but if you upgrade your wild die to a d8 it essentially behaves like a +1 to all the averages.
+
 
 ## Framewerk
 
