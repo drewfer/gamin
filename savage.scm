@@ -41,9 +41,6 @@
       ((12) (max wild (d12)))
       (else (throw 'nonstandard-polyhedral "I don't understand that die type")))))
        
-(define (vector-mean vec)
-  (/ (apply + (vector->list vec)) (vector-length vec)))
-
 (define (round-to-neareast-integer i)
   (cond
     ((integer? i) 
