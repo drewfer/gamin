@@ -19,5 +19,5 @@ Notice that moving from a d6 to a d8 isn't really an upgrade.  I didn't plot thi
 
 ## Framewerk
 
-This is represents the skill roll ranges for the Framewerk RPG system (v2).
+This represents the skill roll ranges for the Framewerk RPG system (v2).
 ![Framewerk Plot](fw.png)
