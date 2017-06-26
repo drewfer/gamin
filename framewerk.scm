@@ -46,13 +46,13 @@
 (define (highest-value pool)
   (apply max pool))
 
-;;; Grab the highest-sum set of identical die from a rolled pool
+;;; Grab the highest-sum set of 2 identical die from a rolled pool
 (define (highest-identical-values pool)
   (apply max 
 	 (map (lambda (n) 
                 (let ((c (count (lambda (x) (= x n)) pool)))
                   (if (> c 1)
-		    (* n c)
+		    (+ n n)
                      0)))
 	      pool)))
 
